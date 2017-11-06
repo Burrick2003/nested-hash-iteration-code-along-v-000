@@ -13,7 +13,7 @@ require 'pry'
   #     favorite_ice_cream_flavors: ["strawberry", "cookie dough", "mint chip"]
   #   }
   # }
-def remove_strawberry(contacts)#brute force, method 1
+def remove_strawberry(contacts)#brute force, method 1, works (surprisingly)
   contacts.each do |person, contact_details_hash|
     if person = "Freddy Mercury"
       contact_details_hash.each do |key, element|
@@ -22,7 +22,7 @@ def remove_strawberry(contacts)#brute force, method 1
     end
   end
 end
-#def remove_strawberry(contacts)
+#def remove_strawberry(contacts)# lesson method #2, works but not specific (only FM is allergic to strawberry)
 #  contacts.each do |person, contact_details_hash|
 #    contact_details_hash.each do |attribute, data|
 #      if attribute == :favorite_ice_cream_flavors
